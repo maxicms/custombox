@@ -131,9 +131,12 @@
             switch ( item ) {
                 case 'container':
                     this.main = document.createElement('div');
+                    // TODO: Fix refresh iframe page
+                    /*
                     while ( document.body.firstChild ) {
                         this.main.appendChild(document.body.firstChild);
                     }
+                    */
                     document.body.appendChild(this.main);
                     break;
                 case 'overlay':
